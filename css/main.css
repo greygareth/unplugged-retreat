@@ -277,6 +277,9 @@ aside {
   flex-flow: row wrap;
 }
 
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -366,9 +369,127 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+    header {
+      justify-content: center;
+    }
+
+    header .content-wrapper {
+      justify-content: space-between;
+      width: 83%
+    }
+
+    .hero-area h1 {
+      padding: 95px 145px 0 60px;
+    }
+
+    header nav ul {
+      justify-content: space-between;
+      width: 16.5%;
+    }
+
+    .header-divider {
+      width: 5%;
+    }
+
+    aside .content-wrapper {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+    }
+
+    .form-description {
+      width: 33%;
+    }
+
+    .form {
+      width: 39%;
+    }
+
+    .features .content-wrapper {
+      width: 83%;
+    }
+
+    .features article {
+      align-items: center;
+      display: flex;
+      flex-basis: 195px;
+      flex-flow: wrap;
+      justify-content: space-between;
+      width: 26%;
+    }
+
+    .reviews article {
+      display: flex;
+      align-items: center;
+    }
+
+    .reviews h2 {
+      width: 65%;
+    }
+
+    .reviews h3 p {
+      width: 41.6%;
+    }
+
+    .footer-content {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    address {
+      width: 27%;
+    }
+
+    .social {
+      width: 27%;
+    }
+
+    /* ==========================================================================
+   About Page
+   ========================================================================== */
+ 
+   .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
 }
+
+.mission-content p {
+    width: 40%;
+}
+
+.contact-section .content-wrapper h2 {
+    width: 66%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+    
+    .faq-content {
+        flex-basis: 40%;
+    }
+ 
+    .faq h2 {
+        width: 100%;
+    }
+  }
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
