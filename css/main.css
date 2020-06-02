@@ -108,6 +108,14 @@ body {
     text-align: left;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -155,6 +163,14 @@ address {
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header,
@@ -272,10 +288,13 @@ input[type=button] {
 /* Hero Area */
 
 .hero-area {
+  background: url(img/logo.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  text-align: left;
 }
 
 /* Aside */
@@ -292,6 +311,9 @@ aside {
 /* Features */
 
 .features {
+  background: url('img/unsplash.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -494,6 +516,10 @@ aside {
       padding: 33px 0;
     }
 
+    header figure {
+      width: 30%;
+    }
+
     header .content-wrapper {
       justify-content: space-between;
       width: 100%
@@ -510,6 +536,16 @@ aside {
     .header-divider {
       display: none;
     }
+
+    .hero-area {
+      min-height: 600px;
+    }
+  
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
 
     aside .content-wrapper {
       display: flex;
@@ -611,14 +647,36 @@ aside {
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
 
+    header {
+      padding: 15px 0;
+    }
+
+    .hero-area {
+      min-height: 775px;
+    }
+
     .content-wrapper {
       max-width: 960px;
  }
 
+ h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+    font-size: 1.875em;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.333;
+}
+
   /* Hero */
- .hero-area h1 {
-     width: 60%;
- }
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
 
  /* Aside */
  aside .content-wrapper {
@@ -629,6 +687,10 @@ aside {
  aside .content-wrapper .form {
      width: 30%;
  }
+
+ .form-description p {
+  font-size: 1.125em;
+}
 
  /* Features */
  .features h2 {
@@ -644,12 +706,21 @@ aside {
      width: 42%;
  }
 
+ .reviews h2 {
+  padding-bottom: 50px;
+}
+
+footer h4 {
+  font-size: 1.875em;
+}
+
 /* ==========================================================================
 About Page
 ========================================================================== */
 .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size: 3em;
   }
 
 /* ==========================================================================
@@ -659,7 +730,11 @@ FAQ Page
      width: 100%;
  }
 
-}
+ .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
