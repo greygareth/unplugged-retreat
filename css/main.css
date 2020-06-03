@@ -630,6 +630,10 @@ aside {
     width: 45%;
 }
 
+.map figure {
+  padding-bottom: 47%; 
+}
+
 .contact-section .content-wrapper h2 {
     width: 80%;
 }
@@ -737,6 +741,10 @@ About Page
   .contact-section .content-wrapper h2 {
       width: 95%;
       font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%; 
   }
 
 /* ==========================================================================
